@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>克罗地亚 + 斯洛文尼亚 自驾手册 · 2026.10.23–10.30</title>
+<meta name="theme-color" content="#0f4c5c">
+<meta name="robots" content="noindex,nofollow">
+<style>
+  :root{
+    --ink:#1b2430; --ink-2:#4b5a68; --line:#e2e6ea; --bg:#fbfaf7;
+    --sea:#0f6f8c; --sea-soft:#e6f2f6; --sun:#c8763a; --sun-soft:#fbeee4;
+    --green:#2f6b4f; --card:#fff;
+    --r:16px; --shadow:0 1px 2px rgba(16,30,40,.06),0 8px 24px -12px rgba(16,30,40,.18);
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.7 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",sans-serif;
+    padding-bottom:env(safe-area-inset-bottom);
+  }
+  .wrap{max-width:760px;margin:0 auto;padding:0 18px}
+
+  /* ---------- header ---------- */
+  header{
+    background:linear-gradient(160deg,#0f4c5c 0%,#116b7e 55%,#17869b 100%);
+    color:#fff; padding:34px 0 26px;
+  }
+  header .kicker{font-size:13px;letter-spacing:.18em;text-transform:uppercase;opacity:.75;margin:0 0 10px}
+  header h1{font-size:26px;line-height:1.3;margin:0 0 12px;font-weight:700}
+  header p{margin:0;font-size:14.5px;opacity:.9}
+  .facts{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+  .fact{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);
+        border-radius:999px;padding:6px 12px;font-size:13px}
+
+  /* ---------- nav chips ---------- */
+  nav.sticky{position:sticky;top:0;z-index:20;background:rgba(251,250,247,.92);
+    backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .chips{display:flex;gap:8px;overflow-x:auto;padding:10px 18px;scrollbar-width:none}
+  .chips::-webkit-scrollbar{display:none}
+  .chips a{flex:0 0 auto;text-decoration:none;color:var(--ink-2);font-size:13.5px;
+    border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 13px;white-space:nowrap}
+  .chips a b{color:var(--sea);font-weight:600;margin-right:4px}
+
+  /* ---------- day cards ---------- */
+  section.day{margin:22px 0}
+  .day-head{display:flex;align-items:baseline;gap:10px;margin-bottom:10px}
+  .day-no{font-size:12px;font-weight:700;letter-spacing:.1em;color:#fff;background:var(--sea);
+    border-radius:8px;padding:3px 8px}
+  .day-date{font-size:13px;color:var(--ink-2)}
+  h2{cursor:pointer;list-style:none;font-size:19px;margin:0;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  details{background:var(--card);border:1px solid var(--line);border-radius:var(--r);
+    box-shadow:var(--shadow);overflow:hidden}
+  details[open]{border-color:#cfd8dd}
+  summary{padding:16px 16px 14px;cursor:pointer;list-style:none;display:block}
+  summary::-webkit-details-marker{display:none}
+  .sum-top{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+  .sum-city{font-size:19px;font-weight:700}
+  .sum-route{font-size:13px;color:var(--ink-2)}
+  .chev{float:right;color:#9aa8b2;transition:transform .18s;font-size:13px;margin-top:2px}
+  details[open] .chev{transform:rotate(90deg)}
+  .body{padding:0 16px 16px;border-top:1px dashed var(--line)}
+  .body>*:first-child{margin-top:14px}
+
+  .lede{margin:0 0 14px;font-size:15px;color:#2b3742}
+  h3{font-size:13px;letter-spacing:.06em;color:var(--sea);margin:18px 0 8px;text-transform:uppercase}
+  ul{margin:0;padding-left:18px}
+  li{margin:5px 0;font-size:15px}
+  li b{font-weight:600}
+  .meta{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:12px 0 0}
+  .meta div{background:var(--sea-soft);border-radius:10px;padding:9px 11px;font-size:13.5px;color:#0d5468}
+  .meta span{display:block;font-size:11.5px;letter-spacing:.06em;opacity:.7;text-transform:uppercase}
+  .tip{margin:14px 0 0;background:var(--sun-soft);border-left:3px solid var(--sun);
+    border-radius:0 10px 10px 0;padding:11px 13px;font-size:14px;color:#6b3b18}
+  .tip b{color:#8a4416}
+
+  /* ---------- tables ---------- */
+  h2.plain{font-size:20px;margin:34px 0 6px;padding:0}
+  .sub{color:var(--ink-2);font-size:14px;margin:0 0 14px}
+  table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);
+    border-radius:12px;overflow:hidden;font-size:14px}
+  th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{background:#f3f6f8;font-size:12.5px;letter-spacing:.04em;color:var(--ink-2);font-weight:600}
+  tr:last-child td{border-bottom:0}
+  td.num{white-space:nowrap;font-variant-numeric:tabular-nums}
+
+  /* ---------- checklist ---------- */
+  .todo{list-style:none;padding:0;margin:0}
+  .todo li{background:#fff;border:1px solid var(--line);border-radius:12px;
+    padding:12px 14px;margin:8px 0;font-size:14.5px;display:flex;gap:10px}
+  .todo li::before{content:"□";color:var(--sea);font-weight:700}
+
+  footer{margin:36px 0 40px;color:#8b98a2;font-size:12.5px;line-height:1.7}
+  a{color:var(--sea)}
+  @media (max-width:420px){
+    header h1{font-size:22px}
+    .meta{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <p class="kicker">自驾路线手册 · 手机版</p>
+    <h1>杜布罗夫尼克 → 萨格勒布<br>克罗地亚 + 斯洛文尼亚 7 晚</h1>
+    <p>2026 年 10 月 23 日（五）— 10 月 30 日（五）· 2 人 · 约 900 km</p>
+    <div class="facts">
+      <span class="fact">✈️ FR3880 进 DBV</span>
+      <span class="fact">✈️ FR2191 出 ZAG</span>
+      <span class="fact">🚗 全程自驾</span>
+      <span class="fact">🇭🇷 7 天 + 🇸🇮 2 天</span>
+    </div>
+  </div>
+</header>
+
+<nav class="sticky">
+  <div class="chips">
+    <a href="#d1"><b>D1</b>杜布罗夫尼克</a>
+    <a href="#d2"><b>D2</b>斯普利特</a>
+    <a href="#d3"><b>D3</b>赫瓦尔</a>
+    <a href="#d4"><b>D4</b>克尔卡·十六湖</a>
+    <a href="#d5"><b>D5</b>里耶卡</a>
+    <a href="#d6"><b>D6</b>卢布尔雅那</a>
+    <a href="#d7"><b>D7</b>布莱德</a>
+    <a href="#d8"><b>D8</b>萨格勒布</a>
+    <a href="#money">费用</a>
+    <a href="#todo">待办</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <section id="d1" class="day">
+    <details open>
+      <summary>
+        <span class="chev">▸</span>
+        <span class="sum-top">
+          <span class="day-no">D1</span>
+          <span class="sum-city">杜布罗夫尼克</span>
+          <span class="day-date">10/23 周五</span>
+        </span>
+        <span class="sum-route">落地 12:50 · 老城与城墙</span>
+      </summary>
+      <div class="body">
+        <p class="lede">「亚得里亚海之珠」。整座老城是 UNESCO 世界遗产，城墙把 1 公里长的大理石主街 <b>Stradun</b> 围在中间。落地当天只做老城，别贪。</p>
+        <h3>必看</h3>
+        <ul>
+          <li><b>老城城墙</b>：绕城一圈约 2 km / 1.5–2 小时。上午 8–9 点或傍晚光线最好，正午石墙反光刺眼。</li>
+          <li><b>Stradun 主街 + 大欧诺弗里奥水池</b>：老城的心脏，傍晚最热闹。</li>
+          <li><b>罗维里耶纳克要塞（St. Lawrence）</b>：看老城全景和落日，从 Pile 门进去。</li>
+          <li><b>缆车（Srđ 山）</b>：4 分钟到山顶，俯瞰老城与群岛，日落场最值。</li>
+        </ul>
+        <div class="meta">
+          <div><span>城墙门票</span>成人 €40（含 1 日 Dubrovnik Pass，可兼逛博物馆 + 公交）</div>
+          <div><span>交通</span>DBV 机场 → 老城约 25 km / 25 分钟</div>
+        </div>
+        <div class="tip"><b>停车别进老城。</b>Pile 一带 €5–8/小时，建议停 Ilijina Glavica 或 Gruž 停车场，再坐公交/走进去。老城里全是台阶，行李越少越好。</div>
+      </div>
+    </details>
+  </section>
+
+  <section id="d2" class="day">
+    <details>
+      <summary>
+        <span class="chev">▸</span>
+        <span class="sum-top">
+          <span class="day-no">D2</span>
+          <span class="sum-city">杜布罗夫尼克 → 斯普利特</span>
+          <span class="day-date">10/24 周六</span>
+        </span>
+        <span class="sum-route">230 km / 约 2h45 · 走 Pelješac 大桥</span>
+      </summary>
+      <div class="body">
+        <p class="lede">北上第一段。2022 年通车的 <b>Pelješac 大桥</b>让这条路完全留在克罗地亚境内——不必再切进波黑的 Neum 走廊过两次边检。</p>
+        <h3>途中停</h3>
+        <ul>
+          <li><b>Ston</b>：欧洲最长的石墙（5.5 km，号称"小长城"），城墙 + 盐田。海鲜/牡蛎是这一带招牌，午饭就地解决。</li>
+          <li><b>Pelješac 半岛</b>：Dingač / Postup 产区的 Plavac Mali 红酒，路边酒庄可顺路品一杯（开车的那位少喝）。</li>
+        </ul>
+        <h3>到了斯普利特</h3>
+        <ul>
+          <li><b>戴克里先宫</b>：罗马皇帝 305 年的退休宫殿，如今是活着的城区——进宫免费，边走边看。</li>
+          <li><b>圣多米努斯大教堂钟楼</b>：爬上去看全城红瓦与海港（塔内台阶窄，恐高慎入）。</li>
+          <li><b>Riva 海滨大道</b>：傍晚咖啡座一字排开，看船进港。</li>
+        </ul>
+        <div class="meta">
+          <div><span>里程</span>Dubrovnik → Split 约 230 km</div>
+          <div><span>过路费</span>该段基本免费，仅个别短段收费</div>
+        </div>
+        <div class="tip"><b>住老城东侧或 Bačvice 一带</b>，距离宫城步行 10 分钟内、又能停车。Split 老城内的"公寓"很多是没有电梯的三层老楼。</div>
+      </div>
+    </details>
+  </section>
+
+  <section id="d3" class="day">
+    <details>
+      <summary>
+        <span class="chev">▸</span>
+        <span class="sum-top">
+          <span class="day-no">D3</span>
+          <span class="sum-city">赫瓦尔岛</span>
+          <span class="day-date">10/25 周日</span>
+        </span>
+        <span class="sum-route">Split ↔ Hvar 车渡往返</span>
+      </summary>
+      <div class="body">
+        <p class="lede">克罗地亚日照最长的岛。10 月底是季末——游客退场、海水还温和，但<b>渡轮班次已经减了</b>，这一天最需要提前确认的就是船。</p>
+        <h3>怎么去</h3>
+        <ul>
+          <li><b>带车</b>：Split → Stari Grad 的车渡（约 2 小时）比到 Hvar 镇的快船更实用，岛上没车会很受限。<b>车位要提前在网上订</b>（Jadrolinija / TP Line）。</li>
+          <li><b>不带车</b>：Split → Hvar 镇 的载客快船约 1 小时，岛上租摩托/小车。</li>
+        </ul>
+        <h3>岛上</h3>
+        <ul>
+          <li><b>Hvar 镇</b>：St. Stephen 广场、山坡上的 Španjola 要塞（看 pakleni 群岛全景）。</li>
+          <li><b>Stari Grad 平原</b>：2400 年历史的 UNESCO 农业景观，橄榄与薰衣草田。</li>
+          <li><b>Pakleni 群岛</b>：季末船班少，风大时取消，别把行程压在它上面。</li>
+        </ul>
+        <div class="meta">
+          <div><span>步行船票</span>约 €6–25（视快船/车渡）</div>
+          <div><span>车渡往返</span>需订车位，单程约 2h</div>
+        </div>
+        <div class="tip"><b>行程底线：</b>当天必须回 Split 住。10 月底末班船较早，订票时先看返程时间再定去程。</div>
+      </div>
+    </details>
+  </section>
+
+  <section id="d4" class="day">
+    <details>
+      <summary>
+        <span class="chev">▸</span>
+        <span class="sum-top">
+          <span class="day-no">D4</span>
+          <span class="sum-city">特罗吉尔 + 克尔卡瀑布 → 十六湖</span>
+          <span class="day-date">10/26 周一</span>
+        </span>
+        <span class="sum-route">30 min + 1h + 2h15</span>
+      </summary>
+      <div class="body">
+        <p class="lede">一天走三站、还要北上，是全程最满的一天。次序建议：<b>特罗吉尔（1.5h）→ 克尔卡（2–3h）→ 十六湖过夜</b>。</p>
+        <h3>特罗吉尔</h3>
+        <ul>
+          <li>整座小岛老城是 UNESCO 遗产，<b>圣劳伦斯大教堂</b>的罗马式portal 是国宝级雕刻。</li>
+          <li>爬钟楼看红瓦 + 水道；老城内车不能进，停桥头停车场。</li>
+        </ul>
+        <h3>克尔卡国家公园</h3>
+        <ul>
+          <li>核心是 <b>Skradinski buk</b>——钙华台阶上一连串瀑布，步道环线 1–3 小时。</li>
+          <li>10 月门票<b>成人 €20</b>（淡季 11 月起降到 €7，旺季 6–9 月 €40）。</li>
+          <li>从 Lozovac 或 Skradin 进，Skradin 可坐船进园，风景更好但要配合船班。</li>
+        </ul>
+        <h3>十六湖（Plitvice）</h3>
+        <ul>
+          <li>傍晚到，住园区附近或园内酒店，第二天一早进园。</li>
+        </ul>
+        <div class="meta">
+          <div><span>克尔卡门票</span>10 月成人 €20</div>
+          <div><span>十六湖门票</span>10 月成人 €23 / 两日 €39</div>
+        </div>
+        <div class="tip"><b>十六湖门票必须提前网上买</b>（ticketing.np-plitvicka-jezera.hr），按入口和时段售票，现场只剩余票。10 月底日照短，务必订最早时段。</div>
+      </div>
+    </details>
+  </section>
+
+  <section id="d5" class="day">
+    <details>
+      <summary>
+        <span class="chev">▸</span>
+        <span class="sum-top">
+          <span class="day-no">D5</span>
+          <span class="sum-city">十六湖 → 里耶卡</span>
+          <span class="day-date">10/27 周二</span>
+        </span>
+        <span class="sum-route">上午游湖 · 160 km / 2h30</span>
+      </summary>
+      <div class="body">
+        <p class="lede">十六湖是 16 个阶梯湖 + 90 多条瀑布，水因钙华与藻类呈蓝绿渐变。全程步道 + 电动船 + 观光小火车，标准走法 4–6 小时。</p>
+        <h3>怎么玩最省力</h3>
+        <ul>
+          <li><b>经典环线（入口 1 进）</b>：下湖区 → 船渡 Kozjak 湖 → 上湖区 → 小火车回入口 1，约 4 小时。</li>
+          <li><b>十月重点</b>：秋色在山毛榉林，上午逆光少、湖面最静；木栈道湿滑，穿防滑鞋。</li>
+          <li>园内<b>禁止下水</b>、禁飞无人机。</li>
+        </ul>
+        <h3>里耶卡</h3>
+        <ul>
+          <li>克罗地亚最大港口城，气质和沿海古镇完全不同：奥匈时期的剧院、市场和工业遗迹。</li>
+          <li><b>Korzo 主街</b>傍晚逛街 + 吃海鲜，物价明显低于 Dubrovnik/Split。</li>
+        </ul>
+        <div class="meta">
+          <div><span>里程</span>十六湖 → Rijeka 约 160 km</div>
+          <div><span>游湖时长</span>4–6 小时（含船与火车）</div>
+        </div>
+        <div class="tip"><b>别贪两头。</b>上午游湖到 13:00 出发，16:00 前到里耶卡正好。若想把湖玩透，就砍掉里耶卡市区，直接傍晚赶到卢布尔雅那。</div>
+      </div>
+    </details>
+  </section>
+
+  <section id="d6" class="day">
+    <details>
+      <summary>
+        <span class="chev">▸</span>
+        <span class="sum-top">
+          <span class="day-no">D6</span>
+          <span class="sum-city">里耶卡 → 卢布尔雅那</span>
+          <span class="day-date">10/28 周三</span>
+        </span>
+        <span class="sum-route">Trsat 城堡、洞窟 · 跨境 2h10</span>
+      </summary>
+      <div class="body">
+        <p class="lede">上午在里耶卡，下午过境进斯洛文尼亚。<b>这是全程唯一需要额外买路权的国家</b>。</p>
+        <h3>里耶卡</h3>
+        <ul>
+          <li><b>Trsat 城堡（Trsatska gradina）</b>：城上山丘，俯瞰整座港口与 Kvarner 湾，从 Korzo 有 561 级石阶（Trsatske stube）可爬，也有公交。</li>
+          <li><b>Trsat 圣母朝圣堂</b>：就在城堡旁，克罗地亚最重要的朝圣地之一。</li>
+          <li><b>洞窟</b>：近郊的钟乳石洞（如 Vela draga / 附近 Postojna 系洞窟），需提前查开放时段。</li>
+        </ul>
+        <h3>卢布尔雅那</h3>
+        <ul>
+          <li><b>三重桥 + Prešeren 广场</b>、河岸中央市场（Pogačarjev trg 的露天food market）。</li>
+          <li><b>卢布尔雅那城堡</b>：缆车上山，票价门口 €19 / 线上 €17.10。</li>
+          <li>城市极小，全部步行可达；晚上河边餐厅是本地人的日常。</li>
+        </ul>
+        <div class="meta">
+          <div><span>车程</span>Rijeka → Ljubljana 约 2h10</div>
+          <div><span>斯洛文尼亚 e-vignette</span>7 天小车约 €19（进境前买）</div>
+        </div>
+        <div class="tip"><b>两件事先办：</b>① 在 evinjeta.dars.si 买电子 vignette（车牌要对）；② 确认租车合同允许跨境进斯洛文尼亚——DBV 取 / ZAG 还的单程协议里这条常被限制，违约罚款很高。</div>
+      </div>
+    </details>
+  </section>
+
+  <section id="d7" class="day">
+    <details>
+      <summary>
+        <span class="chev">▸</span>
+        <span class="sum-top">
+          <span class="day-no">D7</span>
+          <span class="sum-city">布莱德湖</span>
+          <span class="day-date">10/29 周四</span>
+        </span>
+        <span class="sum-route">Ljubljana ↔ Bled 单程约 1h</span>
+      </summary>
+      <div class="body">
+        <p class="lede">斯洛文尼亚的明信片：湖心小岛 + 悬崖上的城堡 + 背景的朱利安阿尔卑斯。10 月底是秋色最好的时候，人也少。</p>
+        <h3>必看</h3>
+        <ul>
+          <li><b>湖心岛（Blejski otok）</b>：传统木船 <b>pletna</b> 从湖边码头出发，含往返 + 30 分钟岛上时间；划自己租小船也行。</li>
+          <li><b>布莱德城堡</b>：悬崖上的千年城堡，俯瞰全湖。<b>成人 €19</b>。</li>
+          <li><b>环湖步道</b>：6 km，走完约 1.5 小时，日出/日落最美。</li>
+          <li><b>Vintgar 峡谷</b>：4 km 外，木栈道沿 Radovna 河，10 月底常因维护/积雪关闭，出发前查开放状态。</li>
+        </ul>
+        <div class="meta">
+          <div><span>城堡门票</span>成人 €19</div>
+          <div><span>pletna 船</span>现场买票，按人收费</div>
+        </div>
+        <div class="tip"><b>住卢布尔雅那往返</b>比住 Bled 便宜一半，1 小时车程完全可接受。晚上回卢布尔雅那吃饭，选择也多得多。</div>
+      </div>
+    </details>
+  </section>
+
+  <section id="d8" class="day">
+    <details>
+      <summary>
+        <span class="chev">▸</span>
+        <span class="sum-top">
+          <span class="day-no">D8</span>
+          <span class="sum-city">萨格勒布 → 都柏林</span>
+          <span class="day-date">10/30 周五</span>
+        </span>
+        <span class="sum-route">140 km / 2h · 13:30 还车 · 16:45 起飞</span>
+      </summary>
+      <div class="body">
+        <p class="lede">这一天的主角是<b>时间</b>，不是景点。08:30 出发，10:30 到萨格勒布，还车 + 值机之后只剩不到 1.5 小时。</p>
+        <h3>只够看这些</h3>
+        <ul>
+          <li><b>Ban Jelačić 广场 → Dolac 市场</b>：红伞下的露天市场，买辣椒粉、松露酱、kulen 香肠带回家。</li>
+          <li><b>圣马可教堂</b>：彩色瓷砖屋顶（克罗地亚/萨格勒布徽章），从广场步行 5 分钟。</li>
+          <li><b>Tkalčićeva 街</b>：咖啡馆一条街，最后一顿午饭在这里解决。</li>
+        </ul>
+        <div class="meta">
+          <div><span>车程</span>Ljubljana → ZAG 140 km / 约 2h</div>
+          <div><span>航班</span>FR2191 16:45 → 18:50（RSHTUR）</div>
+        </div>
+        <div class="tip"><b>还车前加满油</b>——在克罗地亚一侧加，机场附近油价高。托运只有 1 件 20 kg，买液体类注意上限；另一人只有手提行李。</div>
+      </div>
+    </details>
+  </section>
+
+  <h2 class="plain" id="money">费用速查</h2>
+  <p class="sub">以下为 2026 官方价格，均为每人/每车实付口径。</p>
+  <table>
+    <thead><tr><th>项目</th><th>价格</th><th>说明</th></tr></thead>
+    <tbody>
+      <tr><td>杜布罗夫尼克城墙</td><td class="num">€40</td><td>含 1 日 Dubrovnik Pass（博物馆 + 公交）</td></tr>
+      <tr><td>克尔卡（10 月）</td><td class="num">€20</td><td>11 月起 €7；6–9 月 €40</td></tr>
+      <tr><td>十六湖（10 月）</td><td class="num">€23</td><td>两日票 €39；须线上预订</td></tr>
+      <tr><td>布莱德城堡</td><td class="num">€19</td><td>学生 €11.5</td></tr>
+      <tr><td>卢布尔雅那城堡</td><td class="num">€19 / €17.10</td><td>门口价 / 线上价</td></tr>
+      <tr><td>克罗地亚 A1 过路费</td><td class="num">≈ €30.6</td><td>Zagreb ↔ Karamatići 全程；其余路段免费</td></tr>
+      <tr><td>斯洛文尼亚 e-vignette</td><td class="num">≈ €19</td><td>7 天，小车；evinjeta.dars.si</td></tr>
+      <tr><td>机票（2 人）</td><td class="num">€224.81</td><td>回程已付；去程另计</td></tr>
+    </tbody>
+  </table>
+
+  <h2 class="plain" id="todo">出发前待办</h2>
+  <ul class="todo">
+    <li>十六湖门票（ticketing.np-plitvicka-jezera.hr，按入口+时段售票，订最早时段）</li>
+    <li>斯洛文尼亚 e-vignette（车牌要对，进境前买）</li>
+    <li>确认租车：是否已订？DBV 取 / ZAG 还的单程费、能否进斯洛文尼亚</li>
+    <li>Hvar 车渡车位（10 月底班次减少，先看返程时间）</li>
+    <li>还车前加满油（克罗地亚一侧）</li>
+    <li>Intreo 出境报备 + 10/28 的 PRB 领款安排</li>
+  </ul>
+
+  <footer>
+    数据来源：各国公园/城堡官方价目表（2026）、克罗地亚公路公司、斯洛文尼亚 DARS。<br>
+    价格为 2026 年 10 月核对值；现场可能微调。行程按 10/23 12:50 落地、10/30 16:45 起飞编排。
+  </footer>
+
+</div>
+</body>
+</html>
