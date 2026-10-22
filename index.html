@@ -123,6 +123,23 @@
   .todo li{background:#fff;border:1px solid var(--line);border-radius:12px;
     padding:12px 14px;margin:8px 0;font-size:14.5px;display:flex;gap:10px}
   .todo li::before{content:"□";color:var(--sea);font-weight:700}
+  .wx-rain{color:#b23b3b;font-weight:600}
+  .wx-ok{color:#2f6b4f;font-weight:600}
+  .wx-cold{color:#3a5f9e;font-weight:600}
+  .note-sm{font-size:12.5px;color:#7c8894;margin:8px 2px 0;line-height:1.6}
+  .wxlist{border-top:1px solid var(--line);margin-top:10px}
+  .wxday{display:grid;grid-template-columns:62px 1fr;gap:0 12px;padding:11px 2px;border-bottom:1px solid var(--line);align-items:start}
+  .wxday .d{font-weight:700;font-size:12.5px;color:var(--sea);line-height:1.35}
+  .wxday .c{font-weight:600;font-size:15px}
+  .wxday .m{display:block;font-weight:400;font-size:13px;color:#5b6a76;margin-top:3px;line-height:1.6;font-variant-numeric:tabular-nums}
+  .stats{display:grid;gap:8px;margin-top:10px}
+  .stat{display:flex;justify-content:space-between;gap:10px;background:#fff;border:1px solid var(--line);
+        border-radius:10px;padding:9px 12px;font-size:13.5px}
+  .stat b{font-weight:600}
+  .stat span{color:#5b6a76;font-variant-numeric:tabular-nums;white-space:nowrap}
+  .wear{display:grid;gap:10px;margin-top:12px}
+  .wear div{background:#fff;border:1px solid var(--line);border-radius:12px;padding:11px 14px;font-size:14.5px;box-shadow:var(--shadow)}
+  .wear b{color:var(--sea)}
 
   footer{margin:36px 0 40px;color:#8b98a2;font-size:12.5px;line-height:1.7}
   a{color:var(--sea)}
@@ -160,6 +177,7 @@
     <a href="#d7"><b>D7</b>🇸🇮 布莱德</a>
     <a href="#d8"><b>D8</b>🇸🇮→🇭🇷 萨格勒布</a>
     <a href="#culture"><b>·</b>风土</a>
+    <a href="#wx"><b>·</b>天气</a>
     <a href="#money">费用</a>
     <a href="#todo">待办</a>
   </div>
@@ -629,6 +647,49 @@
     </tbody>
   </table>
 
+
+  <h2 class="plain" id="wx">沿途天气与穿衣</h2>
+  <p class="sub">预报取自 Open-Meteo（2026-10-21 拉取，覆盖 23–30 日全部行程）；气候值取自 ERA5 过去十个 10 月的实测。前四天（海岸）可信度高，后四天只看趋势。</p>
+  <div class="wxlist">
+    <div class="wxday"><span class="d">D1<br>10/23</span><span class="c">杜布罗夫尼克 · 🇭🇷<span class="m">20.3° / 15.6° · 0 mm · 概率 0% · 多云 · 日落 17:53</span></span></div>
+    <div class="wxday"><span class="d">D2<br>10/24</span><span class="c">斯普利特 · 🇭🇷<span class="m"><span class="wx-rain">19.5° / 16.1° · 6.0 mm · 概率 91% · 雷雨 · 阵风 37 km/h</span> · 日落 17:56</span></span></div>
+    <div class="wxday"><span class="d">D3<br>10/25</span><span class="c">斯普利特 / 赫瓦尔 · 🇭🇷<span class="m">19.0° / 15.8° · 0.9 mm · 概率 47% · 小雨 · 日落 17:55</span></span></div>
+    <div class="wxday"><span class="d">D4<br>10/26</span><span class="c">十六湖（克尔卡约 19°）· 🇭🇷<span class="m"><span class="wx-cold">11.3° / 4.3°</span> · 0.2 mm · 概率 45% · 小雨 · 日落 17:55</span></span></div>
+    <div class="wxday"><span class="d">D5<br>10/27</span><span class="c">里耶卡 · 🇭🇷<span class="m">19.6° / 11.4° · 0 mm · 概率 5% · 阴 · 日落 17:57</span></span></div>
+    <div class="wxday"><span class="d">D6<br>10/28</span><span class="c">卢布尔雅那 · 🇸🇮<span class="m"><span class="wx-cold">16.4° / 3.9°</span> · 0 mm · 概率 8% · 晨雾 · 日落 17:54</span></span></div>
+    <div class="wxday"><span class="d">D7<br>10/29</span><span class="c">布莱德 · 🇸🇮<span class="m"><span class="wx-cold">15.9° / 4.5°</span> · 0 mm · 概率 10% · 多云 · 日落 17:53</span></span></div>
+    <div class="wxday"><span class="d">D8<br>10/30</span><span class="c">萨格勒布 · 🇭🇷<span class="m"><span class="wx-cold">12.3° / 4.9°</span> · 0 mm · 概率 2% · 多云 · 阵风 35 km/h · 日落 17:45</span></span></div>
+  </div>
+  <p class="note-sm">一句话：<b>前段湿、后段干、共同点是温差大</b>。海岸白天 19–20°C，山区清晨掉到 4°C 左右——同一次行李要同时应付这两个。</p>
+
+  <h3 style="margin-top:26px">雨到底多不多（10 月历史）</h3>
+  <div class="stats">
+    <div class="stat"><b>里耶卡</b><span><span class="wx-rain">42% 的日子有雨</span> · 中位 247 mm</span></div>
+    <div class="stat"><b>布莱德</b><span>37% · 中位 145 mm</span></div>
+    <div class="stat"><b>十六湖</b><span>37% · 中位 139 mm</span></div>
+    <div class="stat"><b>卢布尔雅那</b><span>34% · 中位 106 mm</span></div>
+    <div class="stat"><b>杜布罗夫尼克</b><span><span class="wx-rain">32% · 中位 241 mm</span></span></div>
+    <div class="stat"><b>萨格勒布</b><span>29% · 中位 68 mm</span></div>
+    <div class="stat"><b>斯普利特</b><span>28% · 中位 142 mm</span></div>
+  </div>
+  <p class="note-sm">两个反直觉：<b>杜布罗夫尼克 10 月并不干</b>（241 mm，是斯普利特的一倍多，秋雨从海上正面砸）；<b>里耶卡是全程最湿</b>（42% 的日子有雨）。雨具不是备选，是必备。</p>
+
+  <h3 style="margin-top:26px">怎么穿</h3>
+  <div class="wear">
+    <div><b>① 贴身层</b>　短袖 / 薄长袖速干——海岸白天 19–20°C 用得上，十六湖走完一圈会出汗。</div>
+    <div><b>② 保暖层</b>　抓绒或薄羽绒。<span class="wx-cold">十六湖、布莱德、卢布尔雅那清晨 4°C</span>，加上风口体感更低，这是必备不是可选。</div>
+    <div><b>③ 外层</b>　防水冲锋衣／硬壳，别只带折叠伞——24 号阵风 37 km/h 会把伞吹翻。</div>
+    <div><b>鞋</b>　一双抓地好的防水徒步鞋走全程：十六湖木栈道湿滑、杜布罗夫尼克城墙是光面大理石、Ston 石墙台阶密。带一双备用的干燥袜子。</div>
+    <div><b>其余</b>　泳衣（赫瓦尔一带海温 20.3–20.9°C，敢下水就能游）＋速干毛巾；墨镜和防晒（十月中午紫外线仍强，海面反光更狠）；能压住的帽子。</div>
+  </div>
+
+  <h3 style="margin-top:26px">四个容易踩的坑</h3>
+  <ul class="todo" style="margin-top:8px">
+    <li><b>日落 17:45–17:57</b>：26 号特罗吉尔＋克尔卡务必 17:00 前收尾，湖区步道没有照明。</li>
+    <li><b>10/25 欧洲夏令时结束</b>：克罗地亚转 CET（UTC+1）、爱尔兰转 GMT（UTC+0），两地相差 1 小时。30 号 16:45 萨格勒布起飞＝都柏林时间 15:45。</li>
+    <li><b>28 号卢布尔雅那有晨雾</b>：从里耶卡开车过去，山口段能见度会掉，多留 30 分钟。</li>
+    <li><b>强风影响渡轮</b>：25 号赫瓦尔若带车上船，当天早上先查船公司公告——这是全程最容易被天气打断的一环。</li>
+  </ul>
   <h2 class="plain" id="todo">出发前待办</h2>
   <ul class="todo">
     <li>十六湖门票（ticketing.np-plitvicka-jezera.hr，按入口+时段售票，订最早时段）</li>
@@ -637,6 +698,7 @@
     <li>Hvar 车渡车位（10 月底班次减少，先看返程时间）</li>
     <li>还车前加满油（克罗地亚一侧）</li>
     <li>Intreo 出境报备 + 10/28 的 PRB 领款安排</li>
+    <li>出发前 48 小时复核天气（尤其 24 号雷雨）与 25 号渡轮公告</li>
   </ul>
 
   <footer>
